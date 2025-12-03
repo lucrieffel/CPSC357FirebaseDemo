@@ -14,10 +14,16 @@ struct LoginView: View {
     
     var body: some View {
         VStack(spacing: 24) {
+            // Firebase Logo
+            Image("firebase_logo")
+                .resizable()
+                .scaledToFit()
+                .frame(width: 100, height: 100)
+                .padding(.top, 40)
+            
             Text("Log In")
                 .font(.largeTitle)
                 .fontWeight(.bold)
-                .padding(.top, 40)
             
             Spacer()
             
